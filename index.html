@@ -1,0 +1,68 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="think">
+      <span class="hey">heyy!!!</span>
+    </div>
+    <div class="think-1">
+      <span class="hey_1">where r u going ?</span>
+    </div>
+    <div class="think-2">
+      <span class="hey_2">what r u looking at ?</span>
+    </div>
+    <div class="face">
+      <div class="eyes">
+        <div class="eye">
+          <div class="ball"></div>
+        </div>
+        <div class="eye">
+          <div class="ball"></div>
+        </div>
+      </div>
+      <div class="mouth">
+        <div class="mouth-1"></div>
+      </div>
+    </div>
+
+    <script>
+      var balls = document.getElementsByClassName("ball");
+      document.onmousemove = function () {
+        var x = (event.clientX * 100) / window.innerWidth + "%";
+        var y = (event.clientY * 100) / window.innerHeight + "%";
+        // get toa do ngang doc cua onmousemove
+        // innerWidth va innerHeight get chieu ngang chieu doc cua browser
+        for (var i = 0; i < 2; i++) {
+          balls[i].style.left = x;
+          balls[i].style.top = y;
+          balls[i].style.transform = "translate(-" + x + ", -" + y + ")";
+        }
+      };
+      var hey = document.getElementsByClassName("hey");
+      document.onmouseleave = function () {
+        for (var i = 0; i < 5; i++) {
+          hey[i].style.color = "#f7f1e3";
+        }
+      };
+      var heys_1 = document.getElementsByClassName("hey_1");
+      document.onclick = function () {
+        setTimeout(() => {
+          for (var i = 0; i < 5; i++) {
+            heys_1[i].style.color = "#f7f1e3";
+          }
+        }, 1000);
+      };
+      var hey_2 = document.getElementsByClassName("hey_2");
+      document.onmousedown = function () {
+        for (var i = 0; i < 5; i++) {
+          hey_2[i].style.color = "#f7f1e3";
+        }
+      };
+    </script>
+  </body>
+</html>

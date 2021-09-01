@@ -1,0 +1,103 @@
+body {
+  background: #474787;
+  width: auto;
+}
+.face {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.eyes {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.eye {
+  width: 250px;
+  height: 120px;
+
+  background: #f7f1e3;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 40px;
+  position: relative;
+  overflow: hidden;
+}
+.ball {
+  width: 40px;
+  height: 40px;
+  background: #3c40c6;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 15px solid #575fcf;
+}
+.mouth {
+  width: 400px;
+  height: 100px;
+  background-color: #3c40c6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 350px;
+  border-radius: 50%;
+}
+
+.mouth-1 {
+  background-color: #2c2c54;
+  height: 5px;
+  width: 100%;
+  border-radius: 30px;
+}
+
+.think {
+  width: auto;
+  /* background-color: aquamarine; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 100px;
+}
+
+.think span {
+  font-family: cursive;
+  font-size: 40px;
+  color: #474787;
+}
+
+.think-1 {
+  width: auto;
+  /* background-color: blue; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-left: 100px;
+}
+.think-1 span {
+  font-family: cursive;
+  font-size: 40px;
+  color: #474787;
+}
+
+.think-2 {
+  width: auto;
+  margin-top: 20px;
+  /* background-color: blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 100px;
+}
+.think-2 span {
+  font-family: cursive;
+  font-size: 40px;
+  color: #474787;
+}
